@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public Gun gun;
 
     private Transform gunRotatingPos;
-    public Transform muzzlePos; //ÃÑ±¸
+    private Transform muzzlePos; //ÃÑ±¸
 
     public Slider player_hpbar;
 
@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
         {
             gun.fire();
         }
+        gun.gunRotating(Input.mousePosition);
         
     }
     void Move()

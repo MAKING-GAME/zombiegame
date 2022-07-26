@@ -31,7 +31,7 @@ public class Gun : MonoBehaviour
 
     public void gunRotating(Vector2 mousePos)
     {
-        //Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
         float angle = Mathf.Atan2(mousePos.y - muzzle.position.y, mousePos.x - muzzle.position.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);//마우스방향에따라 총의 방향이 rotate
     }
