@@ -65,7 +65,6 @@
     <Compile Include="Assets\ItemGrid.cs" />
     <Compile Include="Assets\Scripts\mj_player\gun\Gun.cs" />
     <Compile Include="Assets\GridInteract.cs" />
-    <Compile Include="Assets\Scripts\mj_player\gun\gunRotation.cs" />
     <Compile Include="Assets\InventoryUI.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
