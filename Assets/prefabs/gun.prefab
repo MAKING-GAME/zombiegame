@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2254696673808267670}
   - component: {fileID: 2536473510410897925}
   m_Layer: 7
-  m_Name: Gun
+  m_Name: gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7238443271309579944, guid: 7ade926699aa0094bbf3bc5be468cd63, type: 3}
-  fireCoolTime: 0.02
+  fireCoolTime: 0.1
 --- !u!1 &2254696673820230392
 GameObject:
   m_ObjectHideFlags: 0
