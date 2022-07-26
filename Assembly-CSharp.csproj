@@ -58,9 +58,14 @@
   <ItemGroup>
     <Compile Include="Assets\InventoryItem.cs" />
     <Compile Include="Assets\InventoryController.cs" />
+    <Compile Include="Assets\Scripts\mj_player\gun\Bullet.cs" />
     <Compile Include="Assets\Scripts\Player\Move\PlayerMove.cs" />
+    <Compile Include="Assets\Scripts\mj_player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\mj_enemy\monster.cs" />
     <Compile Include="Assets\ItemGrid.cs" />
+    <Compile Include="Assets\Scripts\mj_player\gun\Gun.cs" />
     <Compile Include="Assets\GridInteract.cs" />
+    <Compile Include="Assets\Scripts\mj_player\gun\gunRotation.cs" />
     <Compile Include="Assets\InventoryUI.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
