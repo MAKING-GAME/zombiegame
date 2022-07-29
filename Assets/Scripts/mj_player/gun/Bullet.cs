@@ -9,9 +9,6 @@ public class Bullet : MonoBehaviour
     public float length;
     public float speed;
 
-    private Vector2 direction;
-    
-
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,7 +19,7 @@ public class Bullet : MonoBehaviour
     void DestroyBullet()
     {
         Destroy(gameObject);
-    }   
+    }
     void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.tag == "enemy")

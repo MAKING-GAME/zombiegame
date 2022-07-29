@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{DC006BE3-2681-9728-A831-F2354A363EA5}</ProjectGuid>
+    <ProjectGuid>{83BE2866-0A53-71D6-C680-423D67BBAD46}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,7 +53,7 @@
     <UnityVersion>2021.3.6f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\InventoryItem.cs" />
@@ -63,15 +63,18 @@
     <Compile Include="Assets\Scripts\mj_player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\mj_enemy\monster.cs" />
     <Compile Include="Assets\ItemGrid.cs" />
-    <Compile Include="Assets\Scripts\mj_player\gun\Gun.cs" />
+    <Compile Include="Assets\Scripts\mj_player\gun\Guns.cs" />
     <Compile Include="Assets\GridInteract.cs" />
     <Compile Include="Assets\InventoryUI.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
-    <Compile Include="Assets\Scripts\Status\Status.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Equipment.cs" />
     <Compile Include="Assets\Scripts\Status\IHealth.cs" />
+    <Compile Include="Assets\Scripts\Status\Status.cs" />
     <Compile Include="Assets\Scripts\Status\IStamina.cs" />
-    <Compile Include="Assets\Scripts\Weapon\Equipment.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Gun.cs" />
+    <Compile Include="Assets\Scripts\Equipment\IGunFire.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

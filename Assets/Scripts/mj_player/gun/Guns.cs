@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : MonoBehaviour
+public class Guns : MonoBehaviour
 {
     public GameObject bulletPrefab;
 
@@ -31,23 +31,6 @@ public class Gun : MonoBehaviour
 
     public void gunRotating(Vector2 mousePos)
     {
-        mousePos = Camera.main.ScreenToWorldPoint(mousePos);
-        float angle = Mathf.Atan2(mousePos.y - muzzle.position.y, mousePos.x - muzzle.position.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, angle);//마우스방향에따라 총의 방향이 rotate
-    }
-
-    public void fire()
-    {
-        if (curtime > fireCoolTime)
-        {
-            createBullet();
-            curtime = 0;
-        }
-    }
-    void createBullet()
-    {
-        GameObject bullet = Instantiate(bulletPrefab, muzzle.position, RotatingPoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(muzzle.right * bulletSpeed, ForceMode2D.Impulse); ;
+        
     }
 }

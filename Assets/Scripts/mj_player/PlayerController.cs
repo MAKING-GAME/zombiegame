@@ -6,19 +6,12 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed;
-    public Gun gun;
-
-    private Transform gunRotatingPos;
-    private Transform muzzlePos; //ÃÑ±¸
-
-    public Slider player_hpbar;
+    public Weapon weapon;
 
     // Start is called before the first frame update
     void Start()
     {
         gameObject.SetActive(true);
-        player_hpbar.value = player_hpbar.maxValue;
-        player_hpbar.gameObject.SetActive(true);
     }
 
     void Update()
@@ -26,9 +19,8 @@ public class PlayerController : MonoBehaviour
         Move();
         if (Input.GetMouseButtonDown(0))
         {
-            gun.fire();
+            weapon.attack();
         }
-        gun.gunRotating(Input.mousePosition);
         
     }
     void Move()
