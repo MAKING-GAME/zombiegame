@@ -68,6 +68,10 @@
     <Compile Include="Assets\InventoryUI.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
+    <Compile Include="Assets\Scripts\Status\Status.cs" />
+    <Compile Include="Assets\Scripts\Status\IHealth.cs" />
+    <Compile Include="Assets\Scripts\Status\IStamina.cs" />
+    <Compile Include="Assets\Scripts\Weapon\Equipment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
