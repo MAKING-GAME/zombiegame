@@ -4,6 +4,6 @@ using UnityEngine;
 
 public interface IHealth
 {
-    public void HPrecovery(float value);
-    public void HPdecrease(float value);
+    public void healing(float value);
+    public void takeDamage(float value);
 }

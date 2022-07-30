@@ -1,20 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 20;
+    public float moveSpeed = 20f;
+    public Weapon weapon;
     Transform moveTransform;
     Animator animator;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         moveTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
+        gameObject.SetActive(true);
     }
 
-    private void Update()
+    void Update()
+    {
+        Move();
+        if (Input.GetMouseButtonDown(0))
+        {
+            weapon.attack();
+        }
+        
+    }
+    void Move()
     {
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
@@ -38,9 +51,6 @@ public class PlayerMove : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-        
-
         moveTransform.position += new Vector3(h, v, moveTransform.localPosition.z).normalized * moveSpeed * Time.deltaTime;
     }
-
 }

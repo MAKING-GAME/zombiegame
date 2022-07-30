@@ -2,17 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Status : MonoBehaviour, IHealth, IStamina
+public class Status : MonoBehaviour, IHealth
 {
-    public float HP;
-    public float SP;
-    public void HPrecovery(float value)
+    [SerializeField]
+    private PlayerInterfaceController PIController;
+    private float maxHP = 100f;
+    private float maxSP = 100f;
+
+    private float HP;
+    private float SP;
+
+    
+
+    private void Awake()
     {
-        HP += value;
+        HP = maxHP;
+        HP = maxSP;
     }
-    public void HPdecrease(float value)
+
+    public void healing(float value)
     {
+        Debug.Log(HP);
+        HP += value;
+        if(HP > maxHP) { HP = maxHP; }
+        PIController.changeHPBar(HP / maxHP);
+    }
+    public void takeDamage(float value)
+    {
+        Debug.Log(HP);
         HP -= value;
+        if (HP < 0) { HP = 0; }
+        PIController.changeHPBar(HP / maxHP);
     }
 
     public void SPrecovery(float value)
