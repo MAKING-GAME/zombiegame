@@ -58,23 +58,22 @@
   <ItemGroup>
     <Compile Include="Assets\InventoryItem.cs" />
     <Compile Include="Assets\InventoryController.cs" />
-    <Compile Include="Assets\Scripts\mj_player\gun\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Status\Status.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon.cs" />
     <Compile Include="Assets\Scripts\Player\Move\PlayerMove.cs" />
     <Compile Include="Assets\Scripts\mj_player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\mj_enemy\monster.cs" />
     <Compile Include="Assets\ItemGrid.cs" />
     <Compile Include="Assets\Scripts\mj_player\gun\Guns.cs" />
     <Compile Include="Assets\GridInteract.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Gun.cs" />
+    <Compile Include="Assets\Scripts\Status\IStamina.cs" />
+    <Compile Include="Assets\Scripts\Status\IHealth.cs" />
     <Compile Include="Assets\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Equipment.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Equipment.cs" />
-    <Compile Include="Assets\Scripts\Status\IHealth.cs" />
-    <Compile Include="Assets\Scripts\Status\Status.cs" />
-    <Compile Include="Assets\Scripts\Status\IStamina.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Weapon.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Gun.cs" />
-    <Compile Include="Assets\Scripts\Equipment\IGunFire.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
