@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
         {
             weapon.attack();
         }
+        else if (Input.GetKeyDown(KeyCode.R) && weapon.GetType().Name == "Gun")
+        {
+            ((Gun)weapon).reloading();
+        }
         
     }
     void Move()
