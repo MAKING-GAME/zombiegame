@@ -8,7 +8,6 @@ public class Gun : Weapon
     public float reloadingSpeed;
     public float range;
     public float bulletSpeed = 5f;
-    public float fireRate;// ÃÑ ½ò¶§ ÄðÅ¸ÀÓ
 
     [Header("Custom Part")]
     public Magazine magazine;
@@ -30,12 +29,18 @@ public class Gun : Weapon
         {
             fire();
             magazine.restAmmo--;
+            PlayerInterfaceController.PIController.changeAmmo(magazine.restAmmo, magazine.maxAmmo);
+        }
+        else
+        {
+            reloading();
         }
     }
 
     public void reloading()
     {
         magazine.restAmmo = magazine.maxAmmo;
+        PlayerInterfaceController.PIController.changeAmmo(magazine.restAmmo, magazine.maxAmmo);
     }
 
     private void Update()
@@ -45,7 +50,7 @@ public class Gun : Weapon
 
     public void fire()
     {
-        if (curtime > fireRate)
+        if (curtime > attackSpeed)
         {
             GameObject bullet = Instantiate(bulletPrefab, muzzle.position, gameObject.transform.rotation);
             Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();

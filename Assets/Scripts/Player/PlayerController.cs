@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     Transform moveTransform;
     Animator animator;
 
-    // Start is called before the first frame update
     void Start()
     {
         moveTransform = GetComponent<Transform>();
