@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gun : Weapon
+public class Gun : Weapon, RangedWeapon
 {
     [Header("Gun Spec")]
     public float reloadingSpeed;
@@ -33,11 +33,11 @@ public class Gun : Weapon
         }
         else
         {
-            reloading();
+            reload();
         }
     }
 
-    public void reloading()
+    public void reload()
     {
         magazine.restAmmo = magazine.maxAmmo;
         PlayerInterfaceController.PIController.changeAmmo(magazine.restAmmo, magazine.maxAmmo);

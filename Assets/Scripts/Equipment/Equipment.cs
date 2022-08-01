@@ -5,4 +5,5 @@ using UnityEngine;
 public abstract class Equipment : MonoBehaviour
 {
     public float durability; //³»±¸µµ
+    abstract public void attack();
 }

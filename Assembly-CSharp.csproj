@@ -57,23 +57,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\InventoryItem.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Weapon\Gun\Magazine.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon\RangedWeapon\Gun\Magazine.cs" />
     <Compile Include="Assets\InventoryController.cs" />
     <Compile Include="Assets\Scripts\Status\Status.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Weapon\Gun\Bullet.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon\RangedWeapon\Gun\Bullet.cs" />
     <Compile Include="Assets\Scripts\Equipment\Weapon\Weapon.cs" />
     <Compile Include="Assets\Scripts\TestVersion\StatusControllTest.cs" />
     <Compile Include="Assets\Scripts\Status\PlayerInterfaceController.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\ItemGrid.cs" />
     <Compile Include="Assets\GridInteract.cs" />
-    <Compile Include="Assets\Scripts\Equipment\Weapon\Gun\Gun.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon\RangedWeapon\Gun\Gun.cs" />
     <Compile Include="Assets\Scripts\Status\IHealth.cs" />
     <Compile Include="Assets\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Equipment\Equipment.cs" />
     <Compile Include="Assets\InventoryHighlight.cs" />
     <Compile Include="Assets\ItemData.cs" />
     <Compile Include="Assets\Scripts\TestVersion\WeaponSettingTest.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerWearItem.cs" />
+    <Compile Include="Assets\Scripts\Equipment\Weapon\RangedWeapon\IRangedWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

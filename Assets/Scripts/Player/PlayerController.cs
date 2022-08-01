@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 20f;
-    public Weapon weapon;
+    PlayerWearEquipment playerWearEquipment;
     Transform moveTransform;
     Animator animator;
 
@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     {
         moveTransform = GetComponent<Transform>();
         animator = GetComponent<Animator>();
+        playerWearEquipment = GetComponent<PlayerWearEquipment>();
         gameObject.SetActive(true);
     }
 
@@ -22,11 +23,11 @@ public class PlayerController : MonoBehaviour
         Move();
         if (Input.GetMouseButtonDown(0))
         {
-            weapon.attack();
+            playerWearEquipment.handEquipment.attack();
         }
-        else if (Input.GetKeyDown(KeyCode.R) && weapon.GetType().Name == "Gun")
+        else if (Input.GetKeyDown(KeyCode.R))
         {
-            ((Gun)weapon).reloading();
+            ((RangedWeapon)playerWearEquipment.handEquipment).reload();
         }
         
     }
