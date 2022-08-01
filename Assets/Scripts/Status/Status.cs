@@ -18,7 +18,6 @@ public class Status : MonoBehaviour, IHealth
         HP = maxHP;
         HP = maxSP;
     }
-
     public void healing(float value)
     {
         Debug.Log(HP);

@@ -6,4 +6,5 @@ public interface IHealth
 {
     public void healing(float value);
     public void takeDamage(float value);
+    public void takeTrueDamage(float value);
 }
