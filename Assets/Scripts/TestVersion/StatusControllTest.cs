@@ -9,13 +9,13 @@ public class StatusControllTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Status playerStatus = player.GetComponent<Status>();
+            PlayerStatus playerStatus = player.GetComponent<PlayerStatus>();
             IHealth playerHP = playerStatus;
             playerHP.takeDamage(100);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
-            Status playerStatus = player.GetComponent<Status>();
+            PlayerStatus playerStatus = player.GetComponent<PlayerStatus>();
             IHealth playerHP = playerStatus;
             playerHP.healing(5);
         }

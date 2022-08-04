@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*Player의 조작을 제어하는 스크립트*/
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 20f;
+    public float moveSpeed = 20f; //플레이어 이동속도
     PlayerWearEquipment playerWearEquipment;
     Transform moveTransform;
     Animator animator;
